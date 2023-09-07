@@ -44,7 +44,10 @@ class _GitHubProfilePageState extends State<GitHubProfilePage> {
       appBar: AppBar(
         elevation: 1,
         centerTitle: true,
-        title: const Text("Farouk Bello's GitHub Profile"),
+        title: Text(
+          "Farouk Bello's GitHub Profile",
+          style: Theme.of(context).textTheme.titleMedium,
+        ),
       ),
       body: Scaffold(
         body: Stack(

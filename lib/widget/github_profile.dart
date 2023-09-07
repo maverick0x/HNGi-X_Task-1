@@ -13,7 +13,7 @@ class GitHubProfile extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         const DescriptionText(
-          description: 'Display Picture',
+          description: 'GitHub Profile',
         ),
         const SizedBox(
           height: 10,
