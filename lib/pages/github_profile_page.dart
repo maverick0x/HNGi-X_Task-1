@@ -49,19 +49,17 @@ class _GitHubProfilePageState extends State<GitHubProfilePage> {
           style: Theme.of(context).textTheme.titleMedium,
         ),
       ),
-      body: Scaffold(
-        body: Stack(
-          children: [
-            WebViewWidget(
-              controller: webViewController,
-            ),
-            loadingPercentage < 100
-                ? LinearProgressIndicator(
-                    value: loadingPercentage / 100.0,
-                  )
-                : const SizedBox(),
-          ],
-        ),
+      body: Stack(
+        children: [
+          WebViewWidget(
+            controller: webViewController,
+          ),
+          loadingPercentage < 100
+              ? LinearProgressIndicator(
+                  value: loadingPercentage / 100.0,
+                )
+              : const SizedBox(),
+        ],
       ),
     );
   }
